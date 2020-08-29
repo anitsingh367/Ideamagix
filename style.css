@@ -1,0 +1,127 @@
+/* Navbar KI SHURWAAAT */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.navbar {
+  display: flex;
+  background-color: #2196f3;
+  justify-content: center;
+  padding-bottom: 0;
+  height: 70px;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  /* margin-right: 30px; */
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+.main-nav li {
+  margin: 0;
+}
+
+.nav-links {
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+}
+/* Navbar KA ANTT */
+
+/* Section1 KI SHURWAAT */
+
+.section1{
+    height: 40vh;
+    background-image: url(1.jpg);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 3%;
+}
+.navigation{
+    display: inline;
+}
+.navigation-text{
+    color: white;
+    display: inline-block;
+}
+.navigation-heading{
+    color: white;
+    padding:1% 0 ;
+}
+.button1{
+    color: white;
+    border: none;
+    background-color: #2196f3;
+    align-self: baseline;
+    padding: 7px 29px;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+/* Section1 KA ANTT*/
+
+/* Section2 KI SHURWAAT */
+
+.tab {
+    padding: 0 3%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 15px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color:  #ccc;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 2% 3%;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .tabcontent-child1{
+      align-self: center;
+  }
+  .tabcontent-child1 .tabcontent-head{
+      margin-bottom: 5%;
+      font-size: 2rem;
+      font-weight: normal;
+  }
+  .tabcontent-child1 .tabcontent-text{
+      line-height: 1.5rem;
+  }
+  .tabcontent-child2{
+      flex: 1;
+  }
+  .tabcontent-child2 img{
+      width: 100%;
+  }
