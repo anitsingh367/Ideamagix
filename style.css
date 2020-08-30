@@ -38,34 +38,34 @@ body {
 
 /* Section1 KI SHURWAAT */
 
-.section1{
-    height: 40vh;
-    background-image: url(1.jpg);
+.section1 {
+  height: 40vh;
+  background-image: url(1.jpg);
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    padding: 2% 3%;
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 3%;
 }
-.navigation{
-    display: inline;
+.navigation {
+  display: inline;
 }
-.navigation-text{
-    color: white;
-    display: inline-block;
+.navigation-text {
+  color: white;
+  display: inline-block;
 }
-.navigation-heading{
-    color: white;
-    padding:1% 0 ;
+.navigation-heading {
+  color: white;
+  padding: 1% 0;
 }
-.button1{
-    color: white;
-    border: none;
-    background-color: #2196f3;
-    align-self: baseline;
-    padding: 7px 29px;
-    font-weight: bold;
-    margin-top: 2%;
+.button1 {
+  color: white;
+  border: none;
+  background-color: #2196f3;
+  align-self: baseline;
+  padding: 7px 29px;
+  font-weight: bold;
+  margin-top: 2%;
 }
 
 /* Section1 KA ANTT*/
@@ -73,55 +73,137 @@ body {
 /* Section2 KI SHURWAAT */
 
 .tab {
-    padding: 0 3%;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 15px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color:  #ccc;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #2196f3;
-    color: white;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 2% 3%;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
-  .tabcontent-child1{
-      align-self: center;
-  }
-  .tabcontent-child1 .tabcontent-head{
-      margin-bottom: 5%;
-      font-size: 2rem;
-      font-weight: normal;
-  }
-  .tabcontent-child1 .tabcontent-text{
-      line-height: 1.5rem;
-  }
-  .tabcontent-child2{
-      flex: 1;
-  }
-  .tabcontent-child2 img{
-      width: 100%;
-  }
+  padding: 0 3%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 15px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ccc;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  /* background-color: #2196f3; */
+  /* color: white; */
+  border-bottom: 1px solid #2196f3;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin: 2% 3%;
+  padding-bottom: 5%;
+  border-top: none;
+  border-bottom: 1px dashed #2196f3;
+}
+.tabcontent-child1 {
+  align-self: center;
+}
+.tabcontent-child1 .tabcontent-head {
+  margin-bottom: 5%;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.tabcontent-child1 .tabcontent-text {
+  line-height: 1.5rem;
+}
+/* Section 2 KA ANTT*/
+
+/* Section 3 KI SHURWAAT */
+.section3 {
+  width: 100%;
+  padding: 2% 0 0 0;
+}
+.group {
+  display: flex;
+  flex-direction: row;
+}
+.section-content {
+  margin: 2% 3%;
+  flex: 70%;
+}
+.form {
+  flex: 30%;
+  width: 20%;
+  margin: 0 5% 7% 7%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 15%;
+  align-self: flex-start;
+}
+.form-container {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  padding: 4% 6%;
+  /* margin: 0 2%; */
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+.form-head {
+  font-style: italic;
+  font-weight: lighter;
+  color: #2196f3;
+}
+.form-text {
+  font-size: 11pt;
+  font-weight: lighter;
+  margin: 3% 0 6% 0;
+}
+.form-input {
+  margin-bottom: 5%;
+  width: 100%;
+}
+.button2 {
+  color: white;
+  border: none;
+  background-color: #2196f3;
+  padding: 10px 29px;
+  font-weight: bold;
+  margin-top: 2%;
+  border-radius: 3px;
+  width: 100%;
+}
+.section-content-head{
+    font-weight: normal;
+}
+
+.section-content-text,.list-parent{
+    margin: 4% 0;
+    list-style: none;
+}
+
+.list-parent{
+    border-bottom: 1px dashed #2196f3;
+}
+
+.list-child{
+    margin-bottom: 2%;
+    /* text-indent: 25px; */
+}
+.list-child::before{
+    content: "\25E6";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #2196f3; /* Change the color */
+    font-weight: bolder; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 0.6em; /* Also needed for space (tweak if needed) */
+    /* margin-left: -1em; */
+    /* height: auto; */
+}
+
