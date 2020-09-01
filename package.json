@@ -1,0 +1,22 @@
+{
+  "name": "ideamagix",
+  "version": "1.0.0",
+  "description": "its a test website for ideamagix",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anitsingh367/Ideamagix.git"
+  },
+  "author": "Anit Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anitsingh367/Ideamagix/issues"
+  },
+  "homepage": "https://github.com/anitsingh367/Ideamagix#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}

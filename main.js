@@ -1,4 +1,4 @@
-document.getElementById('defaultOpen').click()
+document.getElementById("defaultOpen").click();
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -19,3 +19,55 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "flex";
   evt.currentTarget.className += " active";
 }
+
+var glide = new Glide(".glide", {
+  type: "carousel",
+  startAt: 0,
+  gap: 35,
+  perView: 2,
+  bound: true,
+  breakpoints: {
+    800: {
+      perView: 2,
+    },
+    480: {
+      perView: 1,
+    },
+  },
+});
+
+glide.mount();
+
+var glide1 = new Glide(".glide1",{
+  type: "carousel",
+  startAt: 0,
+  gap: 45,
+  perView: 3,
+  bound: true,
+  breakpoints: {
+    800: {
+      perView: 2,
+    },
+    480: {
+      perView: 1,
+    },
+  },
+});
+glide1.mount();
+
+var glide2 = new Glide(".glide2",{
+  type: "carousel",
+  startAt: 0,
+  gap: 45,
+  perView: 3,
+  bound: true,
+  breakpoints: {
+    800: {
+      perView: 2,
+    },
+    480: {
+      perView: 1,
+    },
+  },
+});
+glide2.mount();

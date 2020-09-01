@@ -135,11 +135,12 @@ body {
 .section-content {
   margin: 2% 3%;
   flex: 70%;
+  max-width: 60%;
 }
 .form {
   flex: 30%;
-  width: 20%;
-  margin: 0 5% 7% 7%;
+  width: 30%;
+  margin: 0 5% 15% 7%;
   box-sizing: border-box;
   position: sticky;
   top: 15%;
@@ -180,30 +181,116 @@ body {
   border-radius: 3px;
   width: 100%;
 }
-.section-content-head{
-    font-weight: normal;
+.section-content-head {
+  font-weight: normal;
 }
 
-.section-content-text,.list-parent{
-    margin: 4% 0;
-    list-style: none;
+.section-content-text,
+.list-parent {
+  margin: 4% 0;
+  list-style: none;
 }
 
-.list-parent{
-    border-bottom: 1px dashed #2196f3;
+.list-parent {
+  border-bottom: 1px dashed #2196f3;
 }
 
-.list-child{
-    margin-bottom: 2%;
-    /* text-indent: 25px; */
+.list-child {
+  margin-bottom: 2%;
+  /* text-indent: 25px; */
 }
-.list-child::before{
-    content: "\25E6";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #2196f3; /* Change the color */
-    font-weight: bolder; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 0.6em; /* Also needed for space (tweak if needed) */
-    /* margin-left: -1em; */
-    /* height: auto; */
+.list-child::before {
+  content: "\25E6"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2196f3; /* Change the color */
+  font-weight: bolder; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 0.6em; /* Also needed for space (tweak if needed) */
+  /* margin-left: -1em; */
+  /* height: auto; */
 }
 
+/* Section 3 KA ANTT*/
+
+/* Section 4 KI SHURWAAT */
+
+.section4 {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  transition: 0.3s;
+  border: 1px solid lightgrey;
+  padding: 16px 16px;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.glide__bullet {
+  background-color: lightgrey;
+}
+.glide__bullets {
+  bottom: 0;
+  top: 105%;
+}
+.glide__bullet:hover,
+.glide__bullet:focus {
+  border: 2px solid #2196f3;
+  background-color: #2196f3;
+}
+/* Section 4 KA ANTT*/
+
+/* Section 5 KI SHURWAAT */
+.section5 {
+  background-color: #e9f2f7;
+  text-align: center;
+  padding: 10%;
+}
+
+.carousel-head {
+  padding-bottom: 3%;
+}
+.carousel-head h3 {
+  color: red;
+  font-weight: normal;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+  margin-bottom: 20px;
+}
+.carousel-head h1 {
+  font-weight: normal;
+}
+.glide1 .card {
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 2%;
+}
+.glide1 .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.glide1,.glide2 .glide__bullets {
+  position: relative;
+  left: 0;
+}
+/* Section 5 KA ANTT*/
+
+/* Section 6 KI SHURWAAT */
+.section6 {
+  text-align: center;
+  padding: 10% 10% 5% 10%;
+}
+.glide2 .card {
+  border: 1px dashed red;
+  border-radius: 5px;
+  margin: 2%;
+}
+.glide2 .card img {
+  border-radius: 5px 5px 0 0;
+}
+.section6 p{
+  margin-top: 5%;
+}
