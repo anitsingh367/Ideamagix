@@ -294,3 +294,194 @@ body {
 .section6 p{
   margin-top: 5%;
 }
+
+
+#section7 {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-color: #0aa2f7;
+  font-family: "Roboto", sans-serif;
+}
+
+.stay_healthy {
+  text-align: center;
+  padding: 30px 0 15px;
+}
+.we_have_team {
+  text-align: center;
+  font-size: 40px;
+  transform: translateY(-15%);
+}
+
+.line {
+  /*border-left: 2px;
+	padding: 0 10px;*/
+  border-right: 0.5px solid white;
+  height: 30px;
+}
+.nested-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  margin-left: 10px;
+}
+
+.blue-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0b2432;
+  margin-top: 3%;
+  height: 65vh;
+}
+.main-container-2 {
+  display: flex;
+  width: 100%;
+  /*height:  70%;*/
+  height: 35vh;
+}
+.main-container-2 .nested-container-2 {
+  display: flex;
+  width: 33%;
+  margin-top: 2%;
+  align-items: left;
+  margin-left: 5%;
+  flex-direction: column;
+}
+
+.last-container {
+  display: flex;
+}
+
+.get_in_touch {
+  margin-right: 20px;
+  /*height: 40px;*/
+  padding: 10px 25px;
+  font-size: 12px;
+  background-color: #107df7;
+  cursor: pointer;
+}
+.number {
+  margin-left: 20px;
+}
+
+#section7 ul {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  line-height: 22px;
+  margin-left: 10px;
+}
+#section7 ul.dashed {
+  list-style-type: none;
+}
+
+#section7 ul.dashed > li:before {
+  content: "-";
+  /*text-indent: -20px;*/
+}
+
+.floating-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  width: 250px;
+  background-color: white;
+  border-radius: 5%;
+  margin-top: -55px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+.icon {
+  display: flex;
+  margin-top: 12px;
+  flex-direction: row;
+}
+
+.icon .card-text-1 {
+  margin-left: 10px;
+  color: black;
+  font-size: 0.8rem;
+}
+.icon .card-text-2 {
+  margin-top: 5px;
+  font-size: 1.1rem;
+  color: black;
+  margin-left: 10px;
+}
+.card-text-3 {
+  color: black;
+  margin-top: 10px;
+  font-size: 0.7rem;
+}
+
+.horizontal_line {
+  width: 90%;
+  border-bottom: 1px solid white;
+  opacity: 0.3;
+  margin-top: 10px;
+}
+
+.bottom-container {
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+  /*display: flex;*/
+}
+
+.logo {
+  height: 160px;
+}
+.mid-content {
+  display: flex;
+  width: 50%;
+  padding: 25px 60px 25px 0;
+  flex-direction: column;
+  text-align: justify;
+}
+.mid-content h4 {
+  font-size: 1rem;
+}
+
+.mid-content p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.last-content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.last-content span {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.icons {
+  margin-top: 5px;
+}
+.indi-icon {
+  padding: 0 5px;
+}
+
+.follow_us {
+  padding-top: 25px;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+}
+
+.number2 {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #0aa2f7;
+}
