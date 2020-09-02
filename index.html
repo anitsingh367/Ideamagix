@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/6e9c802c2f.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
@@ -19,10 +23,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="arrow.css" />
   </head>
+
   <body>
     <header>
-      <nav class="navbar">
-        <ul class="main-nav" id="">
+      <nav class="navbar" id="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+        <ul class="main-nav" id="js-menu">
           <li>
             <a href="" class="nav-links">Home</a>
           </li>
@@ -75,171 +83,20 @@
     <section class="section2">
       <!-- Tab Links -->
       <div class="tab">
-        <button
-          class="tablinks"
-          onclick="openCity(event, 'Overview')"
-          id="defaultOpen"
-        >
-          Overview
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'Eligibility')">
-          Eligibility
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'Preparation')">
-          Preparation
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'AboutTreatment')">
-          About Treatment
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'TreatmentCare')">
-          Post-Treatment Care
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'RecoveryTips')">
-          Recovery Tips
-        </button>
-        <button class="tablinks" onclick="openCity(event, 'FAQs')">FAQs</button>
-        <button class="tablinks" onclick="openCity(event, 'PatientStories')">
-          Patient Stories
-        </button>
+        <a class="tablinks" href="#overview"> Overview </a>
+        <a class="tablinks" href="#eligibility"> Eligibility </a>
+        <a class="tablinks" href="#preparation"> Preparation </a>
+        <a class="tablinks" href="#treatment"> About Treatment </a>
+        <a class="tablinks" href="#post-treatment"> Post-Treatment Care </a>
+        <a class="tablinks" href="#recovery"> Recovery Tips </a>
+        <a class="tablinks" href="#FAQ">FAQs</a>
+        <a class="tablinks" href="#patient"> Patient Stories </a>
       </div>
 
       <!-- Tab content -->
-      <div id="Overview" class="tabcontent">
+      <div id="overview" class="tabcontent">
         <div class="tabcontent-child1">
           <h3 class="tabcontent-head">Treatment Overview</h3>
-          <p class="tabcontent-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-            consectetur expedita tempore sunt cum modi optio corporis aliquid
-            saepe natus quia nulla, animi recusandae quas vero, quaerat vitae.
-            Aut, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Animi quaerat magnam dolorum sunt, nam voluptatum molestias ab
-            culpa nesciunt aut quas, atque officia tempora quasi aspernatur
-            omnis facilis natus eaque!
-          </p>
-        </div>
-
-        <div class="tabcontent-child2">
-          <img src="2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="Eligibility" class="tabcontent">
-        <div class="tabcontent-child1">
-          <h3 class="tabcontent-head">Eligibility</h3>
-          <p class="tabcontent-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-            consectetur expedita tempore sunt cum modi optio corporis aliquid
-            saepe natus quia nulla, animi recusandae quas vero, quaerat vitae.
-            Aut, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Animi quaerat magnam dolorum sunt, nam voluptatum molestias ab
-            culpa nesciunt aut quas, atque officia tempora quasi aspernatur
-            omnis facilis natus eaque!
-          </p>
-        </div>
-
-        <div class="tabcontent-child2">
-          <img src="2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="Preparation" class="tabcontent">
-        <div class="tabcontent-child1">
-          <h3 class="tabcontent-head">Preparation</h3>
-          <p class="tabcontent-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-            consectetur expedita tempore sunt cum modi optio corporis aliquid
-            saepe natus quia nulla, animi recusandae quas vero, quaerat vitae.
-            Aut, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Animi quaerat magnam dolorum sunt, nam voluptatum molestias ab
-            culpa nesciunt aut quas, atque officia tempora quasi aspernatur
-            omnis facilis natus eaque!
-          </p>
-        </div>
-
-        <div class="tabcontent-child2">
-          <img src="2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="AboutTreatment" class="tabcontent">
-        <div class="tabcontent-child1">
-          <h3 class="tabcontent-head">AboutTreatment</h3>
-          <p class="tabcontent-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-            consectetur expedita tempore sunt cum modi optio corporis aliquid
-            saepe natus quia nulla, animi recusandae quas vero, quaerat vitae.
-            Aut, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Animi quaerat magnam dolorum sunt, nam voluptatum molestias ab
-            culpa nesciunt aut quas, atque officia tempora quasi aspernatur
-            omnis facilis natus eaque!
-          </p>
-        </div>
-
-        <div class="tabcontent-child2">
-          <img src="2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="TreatmentCare" class="tabcontent">
-        <div class="tabcontent-child1">
-          <h3 class="tabcontent-head">TreatmentCare</h3>
-          <p class="tabcontent-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-            consectetur expedita tempore sunt cum modi optio corporis aliquid
-            saepe natus quia nulla, animi recusandae quas vero, quaerat vitae.
-            Aut, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Animi quaerat magnam dolorum sunt, nam voluptatum molestias ab
-            culpa nesciunt aut quas, atque officia tempora quasi aspernatur
-            omnis facilis natus eaque!
-          </p>
-        </div>
-
-        <div class="tabcontent-child2">
-          <img src="2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="RecoveryTips" class="tabcontent">
-        <div class="tabcontent-child1">
-          <h3 class="tabcontent-head">RecoveryTips</h3>
-          <p class="tabcontent-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-            consectetur expedita tempore sunt cum modi optio corporis aliquid
-            saepe natus quia nulla, animi recusandae quas vero, quaerat vitae.
-            Aut, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Animi quaerat magnam dolorum sunt, nam voluptatum molestias ab
-            culpa nesciunt aut quas, atque officia tempora quasi aspernatur
-            omnis facilis natus eaque!
-          </p>
-        </div>
-
-        <div class="tabcontent-child2">
-          <img src="2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="FAQs" class="tabcontent">
-        <div class="tabcontent-child1">
-          <h3 class="tabcontent-head">FAQs</h3>
-          <p class="tabcontent-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
-            consectetur expedita tempore sunt cum modi optio corporis aliquid
-            saepe natus quia nulla, animi recusandae quas vero, quaerat vitae.
-            Aut, cumque. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Animi quaerat magnam dolorum sunt, nam voluptatum molestias ab
-            culpa nesciunt aut quas, atque officia tempora quasi aspernatur
-            omnis facilis natus eaque!
-          </p>
-        </div>
-
-        <div class="tabcontent-child2">
-          <img src="2.jpg" alt="" />
-        </div>
-      </div>
-
-      <div id="PatientStories" class="tabcontent">
-        <div class="tabcontent-child1">
-          <h3 class="tabcontent-head">PatientStories</h3>
           <p class="tabcontent-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
             consectetur expedita tempore sunt cum modi optio corporis aliquid
@@ -259,7 +116,9 @@
     <section class="section3">
       <div class="group">
         <div class="section-content">
-          <h2 class="section-content-head">Eligibility For Treatment</h2>
+          <h2 id="eligibility" class="section-content-head">
+            Eligibility For Treatment
+          </h2>
           <p class="section-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             repellat enim commodi blanditiis ratione assumenda esse repudiandae
@@ -297,7 +156,9 @@
             </li>
           </ul>
 
-          <h2 class="section-content-head">Eligibility For Treatment</h2>
+          <h2 id="preparation" class="section-content-head">
+            Preparation Before Treatment
+          </h2>
           <p class="section-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             repellat enim commodi blanditiis ratione assumenda esse repudiandae
@@ -335,7 +196,7 @@
             </li>
           </ul>
 
-          <h2 class="section-content-head">Eligibility For Treatment</h2>
+          <h2 id="treatment" class="section-content-head">About Treatment</h2>
           <p class="section-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             repellat enim commodi blanditiis ratione assumenda esse repudiandae
@@ -373,7 +234,9 @@
             </li>
           </ul>
 
-          <h2 class="section-content-head">Eligibility For Treatment</h2>
+          <h2 id="post-treatment" class="section-content-head">
+            Post-Treatment Care Treatment
+          </h2>
           <p class="section-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             repellat enim commodi blanditiis ratione assumenda esse repudiandae
@@ -411,7 +274,9 @@
             </li>
           </ul>
 
-          <h2 class="section-content-head">Eligibility For Treatment</h2>
+          <h2 id="recovery" class="section-content-head">
+            Treatment Recovery Tips
+          </h2>
           <p class="section-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             repellat enim commodi blanditiis ratione assumenda esse repudiandae
@@ -449,7 +314,7 @@
             </li>
           </ul>
 
-          <h2 class="section-content-head">Eligibility For Treatment</h2>
+          <h2 id="FAQ" class="section-content-head">Treatment FAQs</h2>
           <p class="section-content-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
             repellat enim commodi blanditiis ratione assumenda esse repudiandae
@@ -487,7 +352,7 @@
             </li>
           </ul>
 
-          <section class="section4">
+          <section id="patient" class="section4">
             <h2 class="section-content-head">Patient Stories & Videos</h2>
 
             <div class="glide">
@@ -658,7 +523,9 @@
         </div>
       </div>
       <p>
-        Dont Hesitate, contact us for better help and services.<a style = "color: red;" href="google.com"
+        Dont Hesitate, contact us for better help and services.<a
+          style="color: red"
+          href="google.com"
           >Explore all Hospitals</a
         >
       </p>
@@ -666,129 +533,152 @@
 
     <footer id="section7">
       <div class="main-container-1">
-        <div class="stay_healthy">
-          Stay Healthy and Strong to enjoy life
-        </div>
- 
-        <div class="we_have_team">
-          We have team of healthcare experts
-        </div>
- 
+        <div class="stay_healthy">Stay Healthy and Strong to enjoy life</div>
+
+        <div class="we_have_team">We have team of healthcare experts</div>
+
         <div class="nested-container">
-          <div class="get_in_touch">
-            Get in Touch
-          </div>
- 
-          <div class="line"> 
-          </div>
- 
-          <div class="number">
-            +91 898 777 9999
-          </div>
+          <div class="get_in_touch">Get in Touch</div>
+
+          <div class="line"></div>
+
+          <div class="number">+91 898 777 9999</div>
         </div>
- 
       </div>
       <div class="blue-container">
         <div class="main-container-2">
- 
           <div class="nested-container-2">
             <div>
               <h4>Important Links</h4>
             </div>
             <div>
               <ul class="dashed">
-               <li>Home About US</li>
-               <li>FAQs</li>
-                 <li>Blogs</li>
-               <li>Contact Us</li>
-             </ul>
-            </div>	
+                <li>Home About US</li>
+                <li>FAQs</li>
+                <li>Blogs</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
           </div>
-            <div class="nested-container-2">
-              <div>
-                <h4>Top Hospitals</h4>
-              </div>
-              <div class="links">
-                <ul class="dashed">
-                    <li>Apolo Hospital Delhi</li>
-                    <li>Medanta Hospital Gurgaon</li>
-                    <li>Max Hospital Delhi</li>
-                    <li>Jaslok Hospital Mumbai</li>
-                    <li>Artemis Hospital Gurgaon</li>
-                    <li>Fortis Hospital Gurgaon</li>
-                    <li>View All</li>
-                 </ul>
-              </div>
-              
+          <div class="nested-container-2">
+            <div>
+              <h4>Top Hospitals</h4>
             </div>
-            <div class="nested-container-2">
-              <div>
-                <h4>Speciality Treatments</h4>
-              </div>
-              <div>
-                <ul class="dashed">
-                   <li>Knee Replacement Surgeon</li>
-                   <li>Uralogist</li>
-                   <li>Spine Surgeon</li>
-                   <li>ENT Surgeon </li>
-                   <li>Orthopedic</li>
-                    <li>Cardiologist</li>
-                    <li>View All</li>
-               </ul>
-              </div>
+            <div class="links">
+              <ul class="dashed">
+                <li>Apolo Hospital Delhi</li>
+                <li>Medanta Hospital Gurgaon</li>
+                <li>Max Hospital Delhi</li>
+                <li>Jaslok Hospital Mumbai</li>
+                <li>Artemis Hospital Gurgaon</li>
+                <li>Fortis Hospital Gurgaon</li>
+                <li>View All</li>
+              </ul>
             </div>
-            <div class="nested-container-2">
-              <div class="floating-card">
-                <div class="icon">
-                  <i class="fa fa-user-plus" aria-hidden="true" style="font-size:40px;color:#0aa2f7;"></i>
-                  <div>
-                    <p class="card-text-1">Are you doctor / Hospital</p>
-                    <p class="card-text-2">Join Meditetreats</p>
-                  </div>	
-                </div>
+          </div>
+
+          <div class="nested-container-2">
+            <div>
+              <h4>Speciality Treatments</h4>
+            </div>
+            <div>
+              <ul class="dashed">
+                <li>Knee Replacement Surgeon</li>
+                <li>Uralogist</li>
+                <li>Spine Surgeon</li>
+                <li>ENT Surgeon</li>
+                <li>Orthopedic</li>
+                <li>Cardiologist</li>
+                <li>View All</li>
+              </ul>
+            </div>
+          </div>
+          <div class="nested-container-2">
+            <div class="floating-card">
+              <div class="icon">
+                <i
+                  class="fa fa-user-plus"
+                  aria-hidden="true"
+                  style="font-size: 40px; color: #0aa2f7"
+                ></i>
                 <div>
-                  <p class="card-text-3">Some Text here</p>
-                </div>	
+                  <p class="card-text-1">Are you doctor / Hospital</p>
+                  <p class="card-text-2">Join Meditetreats</p>
+                </div>
               </div>
               <div>
-                <h4>Medical Tourism Destination</h4>
+                <p class="card-text-3">Some Text here</p>
               </div>
-              <div>
-                <ul class="dashed">
-                    <li>Medical Tourism in India</li>
-                    <li>Medical Tourism in Sri Lanka</li>
-                    <li>Medical Tourism in UAE</li>
-                    <li>View All</li>
-               </ul>
-              </div>	
+            </div>
+            <div>
+              <h4>Medical Tourism Destination</h4>
+            </div>
+            <div>
+              <ul class="dashed">
+                <li>Medical Tourism in India</li>
+                <li>Medical Tourism in Sri Lanka</li>
+                <li>Medical Tourism in UAE</li>
+                <li>View All</li>
+              </ul>
             </div>
           </div>
-          <center><div class="horizontal_line"></div></center>
-         <div class="bottom-container">
-            <div class="logo">
-              <img class="logo" src="https://www.raminbs.com/assets/images/aafia-logo-240x103.png">
-            </div>
-            <div class="mid-content">
-              <h4>About Aafiya Mediretreats</h4>
-              <p>Aafiya Mediretreats is a free confidential, independant resource patients and industry providers. Our mission is to provide a central portal where patients, Medical Tourism providers, hospitals, clinics, employers, and insurance companiescan all find the information they need. Our Website focuses on patients looking for specific knowledge in the fields of medical tourism, dental tourism and health tourism </p>
-           </div>
-            <div class="last-content">
-              <h4 class="follow_us">Follow Us On</h4>
-               <div class="icons">
-                 <img class="indi-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Facebook-512.png" height="20px" width="auto">
- 
-                 <img class="indi-icon"  src="https://www.glazingsummit.co.uk/wp-content/uploads/2019/09/app-icons-twitter.png" height="20px" width="auto">
- 
-                 <img class="indi-icon"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png" height="20px" width="auto">
- 
-                 <img class="indi-icon"  src="https://www.clipartmax.com/png/middle/435-4355837_youtube-youtube-logo-circle-png.png" height="20px" width="auto">
-               </div>
-               
-                <span>Customer Services</span>
-                <p class="number2">+91 9856555666</p>
-            </div>
+        </div>
+        <center><div class="horizontal_line"></div></center>
+        <div class="bottom-container">
+          <div class="logo">
+            <img
+              class="logo"
+              src="https://www.raminbs.com/assets/images/aafia-logo-240x103.png"
+            />
           </div>
-        </div>	
+          <div class="mid-content">
+            <h4>About Aafiya Mediretreats</h4>
+            <p>
+              Aafiya Mediretreats is a free confidential, independant resource
+              patients and industry providers. Our mission is to provide a
+              central portal where patients, Medical Tourism providers,
+              hospitals, clinics, employers, and insurance companiescan all find
+              the information they need. Our Website focuses on patients looking
+              for specific knowledge in the fields of medical tourism, dental
+              tourism and health tourism
+            </p>
+          </div>
+          <div class="last-content">
+            <h4 class="follow_us">Follow Us On</h4>
+            <div class="icons">
+              <img
+                class="indi-icon"
+                src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Facebook-512.png"
+                height="20px"
+                width="auto"
+              />
+
+              <img
+                class="indi-icon"
+                src="https://www.glazingsummit.co.uk/wp-content/uploads/2019/09/app-icons-twitter.png"
+                height="20px"
+                width="auto"
+              />
+
+              <img
+                class="indi-icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
+                height="20px"
+                width="auto"
+              />
+
+              <img
+                class="indi-icon"
+                src="https://www.clipartmax.com/png/middle/435-4355837_youtube-youtube-logo-circle-png.png"
+                height="20px"
+                width="auto"
+              />
+            </div>
+
+            <span>Customer Services</span>
+            <p class="number2">+91 9856555666</p>
+          </div>
+        </div>
       </div>
     </footer>
 

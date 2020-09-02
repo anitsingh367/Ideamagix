@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -10,7 +11,7 @@ body {
 .navbar {
   display: flex;
   background-color: #2196f3;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 0;
   height: 70px;
   align-items: center;
@@ -21,7 +22,6 @@ body {
   /* margin-right: 30px; */
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
   list-style-type: none;
 }
 
@@ -33,6 +33,9 @@ body {
   margin-left: 40px;
   text-decoration: none;
   color: white;
+}
+.navbar-toggle {
+  display: none;
 }
 /* Navbar KA ANTT */
 
@@ -71,7 +74,10 @@ body {
 /* Section1 KA ANTT*/
 
 /* Section2 KI SHURWAAT */
-
+.tablinks{
+  text-decoration: none;
+  color: black;
+}
 .tab {
   padding: 0 3%;
   overflow: hidden;
@@ -80,7 +86,7 @@ body {
 }
 
 /* Style the buttons that are used to open the tab content */
-.tab button {
+.tab a {
   background-color: inherit;
   float: left;
   border: none;
@@ -91,12 +97,12 @@ body {
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab a:hover {
   background-color: #ccc;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tab a.active {
   /* background-color: #2196f3; */
   /* color: white; */
   border-bottom: 1px solid #2196f3;
@@ -104,7 +110,7 @@ body {
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+  display: flex;
   margin: 2% 3%;
   padding-bottom: 5%;
   border-top: none;
@@ -272,7 +278,8 @@ body {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.glide1,.glide2 .glide__bullets {
+.glide1,
+.glide2 .glide__bullets {
   position: relative;
   left: 0;
 }
@@ -291,10 +298,9 @@ body {
 .glide2 .card img {
   border-radius: 5px 5px 0 0;
 }
-.section6 p{
+.section6 p {
   margin-top: 5%;
 }
-
 
 #section7 {
   height: 100vh;
@@ -484,4 +490,44 @@ body {
   font-size: 20px;
   margin-top: 5px;
   color: #0aa2f7;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #2196f3;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    height: 70px;
+    align-items: center;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+    margin-right: 0;
+  }
+  .nav-links {
+    margin-left: 0;
+  }
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+  }
+  .active {
+    display: block;
+  }
+  .active2{
+    height: auto;
+  }
 }
